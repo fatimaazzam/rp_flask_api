@@ -53,17 +53,17 @@ paths:
           description: "Successfully created person"
 
 
-#    /people/{lname}:
-#      get:
-#        operationId: "people.read_one"
-#        tags:
-#          - People
-#        summary: "Read one person"
-#        parameters:
-#          - $ref: "#/components/parameters/lname"
-#        responses:
-#          "200":
-#            description: "Successfully read person"
+   /people/{lname}:
+    get:
+      operationId: "people.read_one"
+      tags:
+        - People
+      summary: "Read one person"
+      parameters:
+        - $ref: "#/components/parameters/lname"
+      responses:
+        "200":
+          description: "Successfully read person"
 
     put:
       tags:
